@@ -17,9 +17,12 @@ body {
 header {
   background-color: #1B2E60;
   padding: 10px;
-  /*text-align: center;*/
   font-size: 18px;
   color: white;
+}
+p_about{
+text-align:center;
+font-size: 28px;
 }
 
 /* creamos dos columnas para que se divida la pantalla como hemos diseñado en el figma */
@@ -47,6 +50,8 @@ caja_der_sup {
   background-color: #2FA4AB;
   height: 200px; 
   color: white;
+  padding: 50px;
+  text-align: center;
 }
  
 caja_der_inf {
@@ -72,12 +77,15 @@ section::after {
 /* Style the footer */
 footer {
   background-color: #1B2E60;
-  padding: 10px;
+  padding:20px;
   text-align: right;
   color: white;
+  padding:20px;
+  height: 100px;
+ }
+footer-p {
+margin-right: 150px;
 }
-
-
 @media (max-width: 600px) {
   caja_der, caja_izq {
     width: 100%;
@@ -88,7 +96,8 @@ footer {
 </head>
 <body>
 <header>
-  <h2>Isabel Navarro Fuentes</h2>
+  <h2>Isabel Navarro Fuentes</h2><h3>About me</h3>
+ 
 </header>
 
 <section>
@@ -105,7 +114,7 @@ footer {
 </section>
 
 <footer>
-  <p>isabel.navarro.fuentes@gmail.com</p>
+  <footer-p>isabel.navarro.fuentes@gmail.com</footer-p>
   
 
 </footer>
