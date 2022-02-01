@@ -8,7 +8,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,7 +19,10 @@ header {
   font-size: 18px;
   color: white;
 }
-
+h3 {
+  text-align: center;
+  display:flex;
+}
 foto_isa {
   float:right;
   background-size: cover;
@@ -92,14 +94,11 @@ section::after {
 /* Style the footer */
 footer {
   background-color: #1B2E60;
-  padding:30px;
+  padding:-30px;
   text-align: right;
   color: white;
-  padding:30px;
-  height: 150px;
- }
-footer-p {
-margin-right: 150px;
+  padding:-30px;
+  height: 250px;
 }
 @media (max-width: 600px) {
   caja_der, caja_izq {
@@ -134,22 +133,28 @@ margin-right: 150px;
 
 <footer>
   <footer-p></footer-p>
-  <form action="https://formcarry.com/s/JqY-mgHBB5U" method="POST" accept-charset="UTF-8" >
-
-    <label for="email">isabel.navarro.fuentes@gmail.com:</label>
-    <input type="email" name="email" placeholder="email@gmail.com">
-    <br>
-    <label for="name">Name</label>
-    <input type="text" name="name" placeholder="Name">
-   <br>
-   <input type= "submit" value ="Enviar">
-    </form>
-  
-
+  <form method="POST" accept-charset="UTF-8" >
+    <div id="after_submit"></div>
+  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <label class="required" for="name">Nombre:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Mensaje:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Enviar" />
+</form>
 
 </footer>
 
 </body>
 </html>
-
-
