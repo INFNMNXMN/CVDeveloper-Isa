@@ -80,47 +80,7 @@ text-align:center;
 font-size: 28px;
 }
 
-/* creamos dos columnas para que se divida la pantalla como hemos diseñado en el figma */
-caja_izq {
-  float: left;
-  width: 50%;
-  height: 400px;
-  background-image: url("img/pc.jpg");
-  background-size: cover;
-  background-position: center center;
-}
 
-caja_der {
-  float: left;
-  width: 50%;
-  background-color: #2FA4AB;
-  height: 400px; 
-}
-
-caja_der_sup {
-  float: left;
-  /*padding: 20px;*/
-  width: 100%;
-  height: 50%;
-  background-color: #2FA4AB;
-  height: 200px; 
-  color: white;
-  padding: 50px;
-  text-align: center;
-}
- 
-caja_der_inf {
-
-  float: left;
-  /*padding: 20px;*/
-  width: 100%;
-  height: 50%;
-  border-radius: 10px;
-  background-image: url("img/ApplePro-Air.jpg");
-  background-size: cover;
-  background-position: center center; 
-
-}
 
 /* Clear floats after the columns */
 section::after {
@@ -138,10 +98,6 @@ footer {
   padding:-30px;
   height: 250px;
 }
-footer-p {
-  padding-right: 150px;
-}
-
 @media (max-width: 600px) {
   caja_der, caja_izq {
     width: 100%;
@@ -160,23 +116,40 @@ footer-p {
 
 <section>
 
-  <caja_izq>
-    
-  </caja_izq>
   
-  <caja_der>
-    <caja_der_sup>
-        <h1 id="myDIV">Developer Web FrontEnd</h1>
-
-    </caja_der_sup>  
-    <caja_der_inf></caja_der_inf>
-    </caja_der>
 
 </section>
 
 <footer>
-  <footer-p>isabel.navarro.fuentes@gmail.com</footer-p>
-  
+  <footer-p></footer-p>
+  <form method="POST" accept-charset="UTF-8" >
+    <div id="after_submit"></div>
+  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <label class="required" for="name">Nombre:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Mensaje:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Enviar" />
+</form>
+<h1>Animation of color</h1>
+<p>Gradually change the background-color from white to blue</p>
+<h2>animation-fill-mode:forwards</h2>
+<p>Let the div element retain the styles values from the last keyframe when the animation ends:</p>
+
+<div id= "myDIV"></div>
+
+
 </footer>
 
 </body>
