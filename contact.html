@@ -1,83 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <title>CSS Template</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Formulario de contacto</title>
     <style>
-      <style>
-         section {
+      /* Importación de fuentes de google fonts */
+      @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+      section {
         flex-grow: 2;
       }
 
       * {
-        box-sizing: border-box;background-size: cover;
+        box-sizing: border-box;
+        background-size: cover;
       }
       body {
         flex-flow: column;
         display: flex;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: "Noto Sans", sans-serif;
       }
       /* Style the header */
       header {
-        background-color: #1b2e60;
+        background-color: #ffffff;
         height: 200px;
         font-size: 18px;
-        color: white;
-      }
-      #myDIV {
-        width: 50%;
-        height: 100px;
-        animation: mymove 5s infinite;
+        color: rgb(17, 187, 199);
       }
 
-      #secondDIV {
-        color: white;
-        width: 300px;
-        height: 30px;
-        position: relative;
-        animation: movimiento 3s;
-      }
-
-      @keyframes mymove {
-        from {
-          color: white;
-        }
-        to {
-          color: blue;
-        }
-      }
-      @keyframes movimiento {
-        from {
-          top: 0px;
-        }
-        to {
-          top: 100px;
-          color: white;
-        }
-      }
       h2 {
-        text-align-last: left;
-        margin-left: 100px;
+        text-align: center;
         font-size: 36px;
-        top: 55px;
+        top: 35px;
+        left: 520px;
+
         position: absolute;
       }
-
       h3 {
-        text-align: right;
+        text-align: center;
         width: 148px;
         height: 44px;
         font-size: 24px;
         top: 70px;
-        left: 1151px;
+        left: 1141px;
         position: absolute;
       }
+      h4 {
+        text-align-last: center;
+        font-size: 24px;
+        top: 75px;
+        position: relative;
+      }
       a:visited {
-        color: white;
+        color: rgb(17, 187, 199);
       }
       foto_isa {
-        position: relative;
+        position: absolute;
         float: right;
         background-size: cover;
         border-radius: 50px;
@@ -86,8 +62,8 @@
         height: 70px;
         background-image: url("img/foto_isa.jpg");
         background-position: center center;
-        margin-top: 50px;
-        margin-right: -150px;
+        margin-top: 250px;
+        margin-left: 320px;
       }
       linkedin {
         position: relative;
@@ -95,59 +71,53 @@
         background-size: cover;
         border-radius: 10px;
         padding: 20px;
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
         background-image: url("img/linkedin.jpg");
         background-position: center center;
-        margin-top: 80px;
-        margin-right: 165px;
+        margin-top: 360px;
+      }
+      whatssap {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 40px;
+        height: 40px;
+        background-image: url("img/whatssap.jpg");
+        background-position: center center;
+        margin-top: 360px;
+        /*margin-right: 165px;*/
+      }
+      email {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 35px;
+        height: 37px;
+        background-image: url("img/mail.jpg");
+        background-position: center center;
+        margin-top: 361px;
+      }
+      ubicacion {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 38px;
+        height: 36px;
+        background-image: url("img/ubicacion.jpg");
+        background-position: center center;
+        margin-top: 362px;
+        margin-right: 1050px;
       }
       p_about {
         text-align: center;
         font-size: 30px;
-      }
-      /* creamos dos columnas para que se divida la pantalla como hemos diseñado en el figma */
-      caja_izq {
-        float: left;
-        width: 50%;
-        height: 400px;
-        /*background-image: url("img/pc.jpg");*/
-        background-image: url("img/pc.jpg");
-        background-color: #cccccc;
-        background-size: cover;
-        background-position: center center;
-        display: flex;
-        transition: background 1s ease-in;
-      }
-
-      caja_der {
-        float: left;
-        width: 50%;
-        background-color: #2fa4ab;
-        height: 400px;
-      }
-
-      caja_der_sup {
-        float: left;
-        /*padding: 20px;*/
-        width: 100%;
-        height: 50%;
-        background-color: #2fa4ab;
-        height: 200px;
-        color: white;
-        padding: 50px;
-        text-align: center;
-      }
-
-      caja_der_inf {
-        float: left;
-        /*padding: 20px;*/
-        width: 100%;
-        height: 50%;
-        border-radius: 10px;
-        background-image: url("img/ApplePro-Air.jpg");
-        background-size: cover;
-        background-position: center center;
       }
 
       /* Clear floats after the columns */
@@ -169,45 +139,266 @@
       footer-p {
         padding-right: 150px;
       }
-      a:link, a:visited, a:active {
-             text-decoration:none;
-        }
-      @media (max-width: 600px) {
-        caja_der,
-        caja_izq {
-          width: 100%;
-          height: auto;
-        }
-        
+      p2 {
+        text-align: left;
+        padding-right: 150px;
+      }
+
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+      }
+
+      /*/////////////////////////////////
+        Estilos previos de la home y a partir de aqui estilos específicos de el contact
+      */
+
+      body {
+        height: 100%;
+        font-family: "Noto Sans", sans-serif;
+        background-color: #ffffff;
+      }
+
+      .contact_form {
+        width: 580;
+        height: auto;
+        margin: 10px auto;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        background-color: #2fa4ab;
+        padding-left: 30px;
+        margin-top: -160px;
+      }
+
+      .boton_menu {
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        padding: 20px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        outline: none;
+        border-radius: 5px;
+        z-index: 0;
+        background: #fff;
+        overflow: hidden;
+        border: 2px solid #495057;
+        color: #495057;
+        margin-left: 300px;
+        text-align: center;
+        margin-top: -15px;
+      }
+      .boton_menu:hover {
+        color: #fff;
+      }
+      .boton_menu:hover:after {
+        height: 100%;
+      }
+      .boton_menu:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: all 0.3s ease;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background: #2fa4ab;
+      }
+
+      input {
+        background-color: #ffffff;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #2fa4ab;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+      }
+
+      textarea {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #fbfbfb;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+      }
+
+      label {
+        display: block;
+        float: center;
+      }
+
+      button {
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+      }
+
+      button p {
+        color: #0abaf0;
+      }
+
+      span {
+        color: #f70707;
+      }
+
+      .aviso {
+        font-size: 13px;
+        color: #0e0e0e;
+      }
+
+      h5 {
+        font-size: 39px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      h6 {
+        font-size: 16px;
+        color: #0e0e0e;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        color: #0e0e0e;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #a8a8a8;
+      }
+
+      ::-webkit-textarea-placeholder {
+        color: #a8a8a8;
+      }
+
+      .formulario input:focus {
+        outline: 0;
+        border: 1px solid #97d848;
+      }
+
+      .formulario textarea:focus {
+        outline: 0;
+        border: 1px solid #97d848;
       }
     </style>
-    </style>
-    </head>
+  </head>
+
+  <body>
+    <!-- formulario de contacto en html y css -->
     <header>
-        <a href="index.html"><h2>ISABEL NAVARRO FUENTES</h2></a>
-        <a href="about_me.html"><h3>About me</h3></a>
-        <a href="www.linkedin.com/in/isabel-navarro-fuentes"><linkedin></linkedin></a>
-        <foto_isa></foto_isa>
-      </header>
-     <h1>Contact me</h1>
-     <form method="POST" accept-charset="UTF-8" >
-    <div id="after_submit"></div>
-  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-    <label class="required" for="name">Nombre:</label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-    <span id="name_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="email">Email:</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    <span id="email_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="message">Mensaje:</label><br />
-    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-    <span id="message_validation" class="error_message"></span>
-  </div>
-    
-    <input id="submit_button" type="submit" value="Enviar" />
-    
-</form>
+      <a href="index.html"><h2>ISABEL NAVARRO FUENTES</h2></a>
+      <h4>Web developer Frontend</h4>
+
+      <a
+        href="https://goo.gl/maps/cpzduRjZUyJF51wL6"
+        target="_blank"
+        alt="Ubicacion"
+        ><ubicacion></ubicacion
+      ></a>
+      <a
+        href="http://www.linkedin.com/in/isabel-navarro-fuentes"
+        target="_blank"
+        ><linkedin></linkedin
+      ></a>
+      <a href="mailto:isabel.navarro.fuentes@gmail.com"><email></email></a>
+      <a href="https://web.whatsapp.com/"><whatssap></whatssap></a>
+
+      <foto_isa></foto_isa>
+    </header>
+    <button class="boton_menu">Home</button>
+    <a href="about_me.html"><button class="boton_menu">Sobre mi</button></a>
+    <button class="boton_menu">Contacto</button>
+    <div class="contact_form">
+      <div class="formulario">
+        <h5>Formulario de contacto</h5>
+        <h6>Escríbeme y en breve me pondré en contacto contigo</h6>
+
+        <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+          <p>
+            <label for="nombre" class="colocar_nombre"
+              >Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="text"
+              name="introducir_nombre"
+              id="nombre"
+              required="obligatorio"
+              placeholder="Escribe tu nombre"
+            />
+          </p>
+
+          <p>
+            <label for="email" class="colocar_email"
+              >Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="email"
+              name="introducir_email"
+              id="email"
+              required="obligatorio"
+              placeholder="Escribe tu Email"
+            />
+          </p>
+
+          <p>
+            <label for="telefono" class="colocar_telefono">Teléfono </label>
+            <input
+              type="tel"
+              name="introducir_telefono"
+              id="telefono"
+              placeholder="Escribe tu teléfono"
+            />
+          </p>
+          <p>
+            <label for="mensaje" class="colocar_mensaje"
+              >Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea
+              name="introducir_mensaje"
+              class="texto_mensaje"
+              id="mensaje"
+              required="obligatorio"
+              placeholder="Deja aquí tu comentario..."
+            ></textarea>
+          </p>
+
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -35,10 +35,10 @@
       }
       /* Style the header */
       header {
-        background-color: #1b2e60;
+        background-color: #ffffff;
         height: 200px;
         font-size: 18px;
-        color: white;
+        color: rgb(17, 187, 199);
       }
       #myDIV {
         width: 50%;
@@ -78,18 +78,24 @@
         top: 55px;
         position: absolute;
       }
-
       h3 {
         text-align: right;
         width: 148px;
         height: 44px;
         font-size: 24px;
         top: 70px;
-        left: 1151px;
+        left: 1141px;
+        position: absolute;
+      }
+      h4 {
+        text-align-last: left;
+        margin-left: 200px;
+        font-size: 24px;
+        top: 95px;
         position: absolute;
       }
       a:visited {
-        color: white;
+        color: rgb(17, 187, 199);
       }
       foto_isa {
         position: relative;
@@ -102,7 +108,7 @@
         background-image: url("img/foto_isa.jpg");
         background-position: center center;
         margin-top: 50px;
-        margin-right: -150px;
+        margin-right: -250px;
       }
       linkedin {
         position: relative;
@@ -110,12 +116,52 @@
         background-size: cover;
         border-radius: 10px;
         padding: 20px;
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
         background-image: url("img/linkedin.jpg");
         background-position: center center;
-        margin-top: 80px;
-        margin-right: 165px;
+        margin-top: 120px;
+       
+      }
+      whatssap {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 40px;
+        height: 40px;
+        background-image: url("img/whatssap.jpg");
+        background-position: center center;
+        margin-top: 120px;
+        /*margin-right: 165px;*/
+      }
+      email {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 35px;
+        height: 37px;
+        background-image: url("img/mail.jpg");
+        background-position: center center;
+        margin-top: 121px;
+        
+      }
+      ubicacion {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 38px;
+        height: 36px;
+        background-image: url("img/ubicacion.jpg");
+        background-position: center center;
+        margin-top: 122px;
+        margin-right: 200px;
+        
       }
       p_about {
         text-align: center;
@@ -184,6 +230,12 @@
       footer-p {
         padding-right: 150px;
       }
+      p2 {
+        text-align: left;
+        padding-right: 150px;
+      }
+
+      
       a:link, a:visited, a:active {
              text-decoration:none;
         }
@@ -201,8 +253,13 @@
   <body>
     <header>
       <a href="index.html"><h2>ISABEL NAVARRO FUENTES</h2></a>
+      <h4>Web developer Frontend</h4>
       <a href="about_me.html"><h3>About me</h3></a>
-      <a href="www.linkedin.com/in/isabel-navarro-fuentes"><linkedin></linkedin></a>
+      <a href="https://goo.gl/maps/cpzduRjZUyJF51wL6" target="_blank" alt="Ubicacion"><ubicacion></ubicacion></a>
+      <a href="http://www.linkedin.com/in/isabel-navarro-fuentes" target="_blank"><linkedin></linkedin></a>
+      <a href="mailto:isabel.navarro.fuentes@gmail.com"><email></email></a>
+      <a href="https://web.whatsapp.com/"><whatssap></whatssap></a>
+      
       <foto_isa></foto_isa>
     </header>
 
@@ -219,6 +276,7 @@
 
     <footer>
       <footer-p>isabel.navarro.fuentes@gmail.com</footer-p>
+      <a href="contact.html"><p2>Contact</p2></a>
     </footer>
     </p>
   </body>
