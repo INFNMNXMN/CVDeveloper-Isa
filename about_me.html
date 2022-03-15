@@ -1,82 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <title>CSS Template</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Sobre mi</title>
     <style>
-         section {
+      /* Importación de fuentes de google fonts */
+      @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+      section {
         flex-grow: 2;
       }
 
       * {
-        box-sizing: border-box;background-size: cover;
+        box-sizing: border-box;
+        background-size: cover;
       }
       body {
         flex-flow: column;
         display: flex;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: "Noto Sans", sans-serif;
       }
       /* Style the header */
       header {
-        background-color: #1b2e60;
+        background-color: #ffffff;
         height: 200px;
         font-size: 18px;
-        color: white;
-      }
-      #myDIV {
-        width: 50%;
-        height: 100px;
-        animation: mymove 5s infinite;
+        color: rgb(17, 187, 199);
       }
 
-      #secondDIV {
-        color: white;
-        width: 300px;
-        height: 30px;
-        position: relative;
-        animation: movimiento 3s;
-      }
-
-      @keyframes mymove {
-        from {
-          color: white;
-        }
-        to {
-          color: blue;
-        }
-      }
-      @keyframes movimiento {
-        from {
-          top: 0px;
-        }
-        to {
-          top: 100px;
-          color: white;
-        }
-      }
       h2 {
-        text-align-last: left;
-        margin-left: 100px;
+        text-align: center;
         font-size: 36px;
-        top: 55px;
+        top: 35px;
+        left: 520px;
+
         position: absolute;
       }
-
       h3 {
-        text-align: right;
+        text-align: center;
         width: 148px;
         height: 44px;
         font-size: 24px;
         top: 70px;
-        left: 1151px;
+        left: 1141px;
         position: absolute;
       }
+      h4 {
+        text-align-last: center;
+        font-size: 24px;
+        top: 75px;
+        position: relative;
+      }
       a:visited {
-        color: white;
+        color: rgb(17, 187, 199);
       }
       foto_isa {
-        position: relative;
+        position: absolute;
         float: right;
         background-size: cover;
         border-radius: 50px;
@@ -85,8 +62,8 @@
         height: 70px;
         background-image: url("img/foto_isa.jpg");
         background-position: center center;
-        margin-top: 50px;
-        margin-right: -150px;
+        margin-top: 250px;
+        margin-left: 320px;
       }
       linkedin {
         position: relative;
@@ -94,59 +71,53 @@
         background-size: cover;
         border-radius: 10px;
         padding: 20px;
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
         background-image: url("img/linkedin.jpg");
         background-position: center center;
-        margin-top: 80px;
-        margin-right: 165px;
+        margin-top: 360px;
+      }
+      whatssap {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 40px;
+        height: 40px;
+        background-image: url("img/whatssap.jpg");
+        background-position: center center;
+        margin-top: 360px;
+        /*margin-right: 165px;*/
+      }
+      email {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 35px;
+        height: 37px;
+        background-image: url("img/mail.jpg");
+        background-position: center center;
+        margin-top: 361px;
+      }
+      ubicacion {
+        position: relative;
+        float: right;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 2px;
+        width: 38px;
+        height: 36px;
+        background-image: url("img/ubicacion.jpg");
+        background-position: center center;
+        margin-top: 362px;
+        margin-right: 1050px;
       }
       p_about {
         text-align: center;
         font-size: 30px;
-      }
-      /* creamos dos columnas para que se divida la pantalla como hemos diseñado en el figma */
-      caja_izq {
-        float: left;
-        width: 50%;
-        height: 400px;
-        /*background-image: url("img/pc.jpg");*/
-        background-image: url("img/pc.jpg");
-        background-color: #cccccc;
-        background-size: cover;
-        background-position: center center;
-        display: flex;
-        transition: background 1s ease-in;
-      }
-
-      caja_der {
-        float: left;
-        width: 50%;
-        background-color: #2fa4ab;
-        height: 400px;
-      }
-
-      caja_der_sup {
-        float: left;
-        /*padding: 20px;*/
-        width: 100%;
-        height: 50%;
-        background-color: #2fa4ab;
-        height: 200px;
-        color: white;
-        padding: 50px;
-        text-align: center;
-      }
-
-      caja_der_inf {
-        float: left;
-        /*padding: 20px;*/
-        width: 100%;
-        height: 50%;
-        border-radius: 10px;
-        background-image: url("img/ApplePro-Air.jpg");
-        background-size: cover;
-        background-position: center center;
       }
 
       /* Clear floats after the columns */
@@ -168,122 +139,385 @@
       footer-p {
         padding-right: 150px;
       }
-      a:link, a:visited, a:active {
-             text-decoration:none;
-        }
-      @media (max-width: 600px) {
-        caja_der,
-        caja_izq {
-          width: 100%;
-          height: auto;
-        }
-        
+      p2 {
+        text-align: left;
+        padding-right: 150px;
+      }
+
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+      }
+
+      /*/////////////////////////////////
+        Estilos previos de la home y a partir de aqui estilos específicos de el contact
+      */
+
+      body {
+        height: 100%;
+        font-family: "Noto Sans", sans-serif;
+        background-color: #ffffff;
+      }
+
+      .contact_form {
+        width: 680;
+        height: auto;
+        margin: 10px auto;
+        border-radius: 5px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        background-color: #2fa4ab;
+        padding-left: 30px;
+        margin-top: -160px;
+        margin-left: 460px;
+      }
+
+      .boton_menu {
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        padding: 20px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        outline: none;
+        border-radius: 5px;
+        z-index: 0;
+        background: #fff;
+        overflow: hidden;
+        border: 2px solid #495057;
+        color: #495057;
+        margin-left: 300px;
+        text-align: center;
+        margin-top: -15px;
+      }
+      .boton_menu:hover {
+        color: #fff;
+      }
+      .boton_menu:hover:after {
+        height: 100%;
+      }
+      .boton_menu:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: all 0.3s ease;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background: #2fa4ab;
+      }
+
+      input {
+        background-color: #ffffff;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #2fa4ab;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+      }
+
+      textarea {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #fbfbfb;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        margin-left: 50px;
+      }
+
+      label {
+        display: block;
+        float: center;
+        margin-left: 50px;
+      }
+
+      button {
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+        margin-left: 40px;
+      }
+
+      button p {
+        color: #0abaf0;
+      }
+
+      span {
+        color: #f70707;
+      }
+
+      .aviso {
+        font-size: 13px;
+        color: #0e0e0e;
+      }
+
+      h5 {
+        font-size: 39px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+      }
+
+      h6 {
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: -50px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #0e0e0e;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #a8a8a8;
+      }
+
+      ::-webkit-textarea-placeholder {
+        color: #a8a8a8;
+      }
+
+      .formulario input:focus {
+        outline: 0;
+        border: 1px solid #97d848;
+      }
+
+      .formulario textarea:focus {
+        outline: 0;
+        border: 1px solid #97d848;
+      }
+      #columna1 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        margin-top: 10px;
+      }
+      #columna2 {
+        position: relative;
+        margin-left: 320px;
+        margin-right: 20px;
+        top: -1205px;
+        width: 300px;
+      }
+      #paragrafo {
+        font-size: 10px;
+        color: #ffffff;
+        text-align: justify;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .linea {
+        border-top: 2px solid white;
+        height: 2px;
+        max-width: 270px;
+        padding: 0;
+        margin: 5px 0 -10px auto;
+      }
+      .linea2 {
+        border-top: 1px solid white;
+        height: 1px;
+        max-width: 280px;
+        padding: 0;
+        margin: 5px auto 10px auto;
+      }
+      ul.a {
+        list-style-type: circle;
       }
     </style>
   </head>
+
   <body>
+    <!-- formulario de contacto en html y css -->
     <header>
       <a href="index.html"><h2>ISABEL NAVARRO FUENTES</h2></a>
-      <a href="about_me.html"><h3>About me</h3></a>
-      <a href="www.linkedin.com/in/isabel-navarro-fuentes"><linkedin></linkedin></a>
+      <h4>Web developer Frontend</h4>
+
+      <a
+        href="https://goo.gl/maps/cpzduRjZUyJF51wL6"
+        target="_blank"
+        alt="Ubicacion"
+        ><ubicacion></ubicacion
+      ></a>
+      <a
+        href="http://www.linkedin.com/in/isabel-navarro-fuentes"
+        target="_blank"
+        ><linkedin></linkedin
+      ></a>
+      <a href="mailto:isabel.navarro.fuentes@gmail.com"><email></email></a>
+      <a href="https://web.whatsapp.com/"><whatssap></whatssap></a>
+
       <foto_isa></foto_isa>
     </header>
-    <main>
-      <p>
-        <b>Formación académica.</b>
-        <br></br>
-        - Developer Web Front-End. Cursando actualmente, presencialmente. Impartido en Tecnocampus de Mataró, adscrito por la Universidad Pompeu Fabra. Duración 240 horas.
-        <br></br>
-        - Certificación European Investment Practitioner, EIP, EFPA España (Banca y servicios financieros).Finalización Diciembre de
-        2019.  
-        <br></br>
-        - Certificación Ley de Contrato de Crédito Inmobiliario LCCI,EFPA España. Banca y servicios financieros. Finalización Diciembre 2019.
-        <br></br>
-        - Colegiación Ilustre Colegio de Abogados de Mataró. (2016)
-        <br></br>
-        - Diploma de Práctica Jurídica, impartido en el Ilustre Colegio de Abogados de Barcelona.
-        (Octubre de 2003 - febrero de 2005). 
-        <br></br>
-        - Licenciatura en Derecho, Universitat Autònoma de Barcelona. (Finalización julio de 2004) 
-        <br></br>
-        
-        <b>Experiencia laboral</b>
-        <br></br>
-        - Gestor Comercial /Apoderada Mixta en BBVA
-        Experiencia BBVA Gestora Comercial Mixta Apoderada. Septiembre de 2016 -
-        noviembre de 2021 (5 años 3 meses) Sant Pol de Mar, Cataluña, España
-        Atención en oficina bancaria universal, con cartera de clientes. Venta y
-        asesoramiento de productos bancarios de BBVA a particulares y PYMES,
-        tanto de activo (hipotecas, préstamos, leasings, rentings, ICOS,
-        refinanciaciones etc...), pasivo (fondos de inversión, depósitos,
-        carteras de valores etc...)como servicios (seguros auto, hogar, decesos,
-        responsabilidad civil, Cyberseguros, Vida etc...) Orientada a resultados
-        y objetivos. Con apoderamiento para firmar en nombre de BBVA en
-        transacciones administrativas como Notarías etc... 
-        <br></br>
-        - Subdirectora de oficina Catalunya Caixa. Julio de 2010 - Septiembre de 2016 (6 años 3
-        meses) Arenys de Mar, Cataluña, España.Subdirectora de oficina bancaria
-        universal. Con 6 personas a mi cargo. Sustitución figura director en
-        algunos largos periodos de tiempo. Orientada 100% a objetivos y
-        resultados. Con responsabilidad de personal de oficina para supervisión
-        y motivación para la consecución de metas marcadas por la entidad
-        bancaria. Reportando ante Director de Oficina y Director de Zona. Venta
-        de productos y servicios bancarios (promociones inmobiliarias de la
-        entidad con puertas abiertas incluidas, hipotecas, seguros, automóviles,
-        rentings, leasings, refinanciaciones etc...) Responsable de atención de
-        clientes de la oficina junto al director de oficina. Apoderada Catalunya
-        Caixa y posteriormente Catalunya Banc. 
-        <br></br>
-        - Caixa Manresa Subdirectora de oficina. Mayo de 2008 - junio de 2010 (2 años 2 meses) Arenys de Mar,
-        Cataluña, España. Subdirectora de oficina, con un sólo empleado a mi
-        cargo. Oficina de reciente creación en la cual el objetivo primordial
-        era el crecimiento de la cartera de clientes y de la cuenta de
-        resultados de la oficina. Alta proactividad comercial para la captación
-        de no clientes, particulares y empresas. Orientación a objetivos y
-        resultados. Apoderada de la entidad bancaria. Reportando directamente
-        ante Directora y Jefe de Zona. Alta resiliencia. Entidad se integró
-        dentro de Catalunya Caixa. Oficina universal con productos bancarios de
-        pasivo, activo y servicios.
-        <br></br>
-        - Arquia Banca. Comercial responsable Departamento Pasivo Oficina de febrero de 2007 a mayo de 2008 (1 año 4
-        meses) Barcelona, Cataluña, España Comercial oficina bancaria universal
-        sucursal 0800. Especialización en asesoramiento y comercialización en
-        productos de inversión de pasivo tales como fondos de inversión,
-        depósitos, carteras de valores, unit links etc.. de la oficina compuesta
-        por 12 personas. 
-        <br></br>
-        - Banco Santander. Gestora Clientes. Octubre de 2005 -febrero de 2007 (1 año 5 meses) Barcelona, Cataluña, España. Comercial
-        oficina universal 6506. Captación y mantenimiento de clientes.
-        Asesoramiento y comercialización de productos y servicios bancarios.
-        Sustituciones puntuales de Dirección de otras oficinas del Banco
-        Santander. Oficina muy orientada a captación de pasivo y nuevos
-        clientes. Proactividad comercial. 
-
-        <br></br>
-        - Momentum Task Force, Ejecutiva Comercial Externa Departamento Aplazo Banco Santander septiembre de 2004
-        - octubre de 2005 (1 año 2 meses) Barcelona, Cataluña, España. Comercial
-        especialista en captación de préstamos personales de auto a través de
-        prescriptores. Captación y mantenimiento de prescriptores (empresas y
-        autónomos sector venta vehículos nuevos y de ocasión). Tramitación
-        préstamos personales a clientes y no clientes del Banco Santander, de
-        prescriptores Departamento Aplazo Coche. Objetivos comerciales.
-        Respondiendo ante Director de Oficina y Director Departamento Aplazo
-        Banco Santander. 
-        <br></br>
-        - Pc City Spain S.A.U. Service Assistant junio de 2003 -
-        septiembre de 2004 (1 año 4 meses) Badalona, Cataluña,
-        España. Cobros a clientes, realización de financiaciones con varias
-        entidades financieras, parte de contabilidad interna de la empresa.
-        Ventas retail sector informática, tanto de productos como de servicios
-        propios de la empresa. 
-
-
-      </p>
-    </main>
-    <footer>
-      <footer-p>isabel.navarro.fuentes@gmail.com</footer-p>
-
-      <div id="myDIV"></div>
-    </footer>
+    <button class="boton_menu">Home</button>
+    <a href="about_me.html"><button class="boton_menu">Sobre mi</button></a>
+    <a href="contact.html"><button class="boton_menu">Contacto</button></a>
+    <div class="contact_form">
+      <div class="formulario">
+        <h5>Sobre mi</h5>
+        <div id="columna1">
+          <h6>Experiencia Laboral</h6>
+          <div class="linea"></div>
+          <ul class="a">
+            <div id="paragrafo">
+              <li>
+                Gestor Comercial /Apoderada Mixta en BBVA Experiencia BBVA
+                <div class="linea2"></div>
+                Gestora Comercial Mixta Apoderada. Septiembre de 2016 -
+                noviembre de 2021 (5 años 3 meses) Sant Pol de Mar, Cataluña,
+                España Atención en oficina bancaria universal, con cartera de
+                clientes. Venta y asesoramiento de productos bancarios de BBVA a
+                particulares y PYMES, tanto de activo (hipotecas, préstamos,
+                leasings, rentings, ICOS, refinanciaciones etc...), pasivo
+                (fondos de inversión, depósitos, carteras de valores etc...)como
+                servicios (seguros auto, hogar, decesos, responsabilidad civil,
+                Cyberseguros, Vida etc...) Orientada a resultados y objetivos.
+                Con apoderamiento para firmar en nombre de BBVA en transacciones
+                administrativas como Notarías etc...
+              </li>
+            </div>
+            <div id="paragrafo">
+              <li>
+                Subdirectora de oficina Catalunya Caixa. Julio de 2010 -
+                Septiembre de 2016 (6 años 3 meses) Arenys de Mar, Cataluña,
+                España.
+                <div class="linea2"></div>
+                Subdirectora de oficina bancaria universal. Con 6 personas a mi
+                cargo. Sustitución figura director en algunos largos periodos de
+                tiempo. Orientada 100% a objetivos y resultados. Con
+                responsabilidad de personal de oficina para supervisión y
+                motivación para la consecución de metas marcadas por la entidad
+                bancaria. Reportando ante Director de Oficina y Director de
+                Zona. Venta de productos y servicios bancarios (promociones
+                inmobiliarias de la entidad con puertas abiertas incluidas,
+                hipotecas, seguros, automóviles, rentings, leasings,
+                refinanciaciones etc...) Responsable de atención de clientes de
+                la oficina junto al director de oficina. Apoderada Catalunya
+                Caixa y posteriormente Catalunya Banc.
+              </li>
+            </div>
+            <div id="paragrafo">
+              <li>
+                Caixa Manresa Subdirectora de oficina. Mayo de 2008 - junio de
+                2010 (2 años 2 meses) Arenys de Mar, Cataluña, España.
+                <div class="linea2"></div>
+                Subdirectora de oficina, con un sólo empleado a mi cargo.
+                Oficina de reciente creación en la cual el objetivo primordial
+                era el crecimiento de la cartera de clientes y de la cuenta de
+                resultados de la oficina. Alta proactividad comercial para la
+                captación de no clientes, particulares y empresas. Orientación a
+                objetivos y resultados. Apoderada de la entidad bancaria.
+                Reportando directamente ante Directora y Jefe de Zona. Alta
+                resiliencia. Entidad se integró dentro de Catalunya Caixa.
+                Oficina universal con productos bancarios de pasivo, activo y
+                servicios.
+              </li>
+            </div>
+            <div id="paragrafo">
+              <li>
+                Arquia Banca. Comercial responsable Departamento Pasivo Oficina
+                de febrero de 2007 a mayo de 2008 (1 año 4 meses) Barcelona,
+                Cataluña, España
+                <div class="linea2"></div>
+                Comercial oficina bancaria universal sucursal 0800.
+                Especialización en asesoramiento y comercialización en productos
+                de inversión de pasivo tales como fondos de inversión,
+                depósitos, carteras de valores, unit links etc.. de la oficina
+                compuesta por 12 personas.
+              </li>
+            </div>
+            <div id="paragrafo">
+              <li>
+                Banco Santander. Gestora Clientes. Octubre de 2005 -febrero de
+                2007 (1 año 5 meses) Barcelona, Cataluña, España. Comercial
+                <div class="linea2"></div>
+                oficina universal 6506. Captación y mantenimiento de clientes.
+                Asesoramiento y comercialización de productos y servicios
+                bancarios. Sustituciones puntuales de Dirección de otras
+                oficinas del Banco Santander. Oficina muy orientada a captación
+                de pasivo y nuevos clientes. Proactividad comercial.
+              </li>
+            </div>
+            <div id="paragrafo">
+              <li>
+                Momentum Task Force, Ejecutiva Comercial Externa Departamento
+                Aplazo Banco Santander septiembre de 2004 - octubre de 2005 (1
+                año 2 meses) Barcelona, Cataluña, España.
+                <div class="linea2"></div>
+                Comercial especialista en captación de préstamos personales de
+                auto a través de prescriptores. Captación y mantenimiento de
+                prescriptores (empresas y autónomos sector venta vehículos
+                nuevos y de ocasión). Tramitación préstamos personales a
+                clientes y no clientes del Banco Santander, de prescriptores
+                Departamento Aplazo Coche. Objetivos comerciales. Respondiendo
+                ante Director de Oficina y Director Departamento Aplazo Banco
+                Santander.
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div id="columna2">
+          <h6>Formación académica</h6>
+          <div class="linea"></div>
+          <ul class="a">
+            <div id="paragrafo">
+              <li>
+                Developer Web Front-End. Cursando actualmente, presencialmente.
+                Impartido en Tecnocampus de Mataró, adscrito por la Universidad
+                Pompeu Fabra. Duración 240 horas.
+              </li>
+            </div>
+            <div id="paragrafo">
+              <li>
+                Certificación European Investment Practitioner, EIP, EFPA España
+                (Banca y servicios financieros).Finalización Diciembre de 2019.
+              </li>
+            </div>
+            <div id="paragrafo">
+              <li>
+                Certificación Ley de Contrato de Crédito Inmobiliario LCCI,EFPA
+                España. Banca y servicios financieros. Finalización Diciembre
+                2019.
+              </li>
+            </div>
+            <div id="paragrafo">
+              <li>Colegiación Ilustre Colegio de Abogados de Mataró. (2016)</li>
+            </div>
+            <div id="paragrafo">
+              <li>
+                Diploma de Práctica Jurídica, impartido en el Ilustre Colegio de
+                Abogados de Barcelona. (Octubre de 2003 - febrero de 2005).
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
