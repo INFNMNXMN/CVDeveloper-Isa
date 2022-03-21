@@ -21,17 +21,21 @@
 
    </script>
     <style>
+      
+      /* Importación de fuentes de google fonts */
+      @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
       section {
         flex-grow: 2;
       }
 
       * {
-        box-sizing: border-box;background-size: cover;
+        box-sizing: border-box;
+        background-size: cover;
       }
       body {
         flex-flow: column;
         display: flex;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: "Noto Sans", sans-serif;
       }
       /* Style the header */
       header {
@@ -40,46 +44,17 @@
         font-size: 18px;
         color: rgb(17, 187, 199);
       }
-      #myDIV {
-        width: 50%;
-        height: 100px;
-        animation: mymove 5s infinite;
-      }
 
-      #secondDIV {
-        color: white;
-        width: 300px;
-        height: 30px;
-        position: relative;
-        animation: movimiento 3s;
-      }
-
-      @keyframes mymove {
-        from {
-          color: white;
-        }
-        to {
-          color: blue;
-        }
-      }
-      @keyframes movimiento {
-        from {
-          top: 0px;
-        }
-        to {
-          top: 100px;
-          color: white;
-        }
-      }
       h2 {
-        text-align-last: left;
-        margin-left: 100px;
+        text-align: center;
         font-size: 36px;
-        top: 55px;
+        top: 35px;
+        left: 570px;
+
         position: absolute;
       }
       h3 {
-        text-align: right;
+        text-align: center;
         width: 148px;
         height: 44px;
         font-size: 24px;
@@ -88,17 +63,17 @@
         position: absolute;
       }
       h4 {
-        text-align-last: left;
-        margin-left: 200px;
+        text-align-last: center;
         font-size: 24px;
-        top: 95px;
-        position: absolute;
+        top: 75px;
+        left: 41px;
+        position: relative;
       }
       a:visited {
         color: rgb(17, 187, 199);
       }
       foto_isa {
-        position: relative;
+        position: absolute;
         float: right;
         background-size: cover;
         border-radius: 50px;
@@ -107,8 +82,8 @@
         height: 70px;
         background-image: url("img/foto_isa.jpg");
         background-position: center center;
-        margin-top: 50px;
-        margin-right: -250px;
+        margin-top: 250px;
+        margin-left: 320px;
       }
       linkedin {
         position: relative;
@@ -120,8 +95,7 @@
         height: 20px;
         background-image: url("img/linkedin.jpg");
         background-position: center center;
-        margin-top: 120px;
-       
+        margin-top: 360px;
       }
       whatssap {
         position: relative;
@@ -133,7 +107,7 @@
         height: 40px;
         background-image: url("img/whatssap.jpg");
         background-position: center center;
-        margin-top: 120px;
+        margin-top: 360px;
         /*margin-right: 165px;*/
       }
       email {
@@ -146,8 +120,7 @@
         height: 37px;
         background-image: url("img/mail.jpg");
         background-position: center center;
-        margin-top: 121px;
-        
+        margin-top: 361px;
       }
       ubicacion {
         position: relative;
@@ -159,58 +132,51 @@
         height: 36px;
         background-image: url("img/ubicacion.jpg");
         background-position: center center;
-        margin-top: 122px;
-        margin-right: 200px;
-        
+        margin-top: 362px;
+        margin-right: 1068px;
       }
       p_about {
         text-align: center;
         font-size: 30px;
       }
-      /* creamos dos columnas para que se divida la pantalla como hemos diseñado en el figma */
-      caja_izq {
-        float: left;
-        width: 50%;
-        height: 400px;
-        /*background-image: url("img/pc.jpg");*/
-        background-image: url("img/pc.jpg");
-        background-color: #cccccc;
+      idea {
+        position: absolute;
+        float: right;
         background-size: cover;
-        background-position: center center;
-        display: flex;
-        transition: background 1s ease-in;
+        padding: 2px;
+        width: 40px;
+        height: 40px;
+        background-image: url("img/idea.png");
+        /*background-position: center center;*/
+        margin-top: -15px;
+        margin-left: 40px;       
       }
-
-      caja_der {
-        float: left;
-        width: 50%;
-        background-color: #2fa4ab;
-        height: 400px;
-      }
-
-      caja_der_sup {
-        float: left;
-        /*padding: 20px;*/
-        width: 100%;
-        height: 50%;
-        background-color: #2fa4ab;
-        height: 200px;
-        color: white;
-        padding: 50px;
-        text-align: center;
-      }
-
-      caja_der_inf {
-        float: left;
-        /*padding: 20px;*/
-        width: 100%;
-        height: 50%;
-        border-radius: 10px;
-        background-image: url("img/ApplePro-Air.jpg");
+      comun {
+        position: absolute;
+        float: right;
         background-size: cover;
-        background-position: center center;
+        padding: 2px;
+        width: 40px;
+        height: 40px;
+        background-image: url("img/comun.png");
+        /*background-position: center center;*/
+        margin-top: 255px;
+        margin-left: -580px;
+        
       }
-
+      analisis {
+        position: absolute;
+        float: right;
+        background-size: cover;
+        padding: 2px;
+        width: 40px;
+        height: 40px;
+        background-image: url("img/analisis.png");
+        /*background-position: center center;*/
+        margin-top: 5px;
+        margin-left: 40px;
+        
+      }
       /* Clear floats after the columns */
       section::after {
         content: "";
@@ -218,66 +184,284 @@
         clear: both;
       }
 
-      /* Style the footer */
-      footer {
-        background-color: #1b2e60;
-        padding: -30px;
-        text-align: right;
-        height: 250px;
-        color: white;
-        padding-top: 100px;
-      }
-      footer-p {
-        padding-right: 150px;
-      }
+      
       p2 {
         text-align: left;
         padding-right: 150px;
       }
 
-      
-      a:link, a:visited, a:active {
-             text-decoration:none;
-        }
-      @media (max-width: 600px) {
-        caja_der,
-        caja_izq {
-          width: 100%;
-          height: auto;
-        }
-        
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
       }
+
+      /*/////////////////////////////////
+        Estilos previos de la home y a partir de aqui estilos específicos de el contact
+      */
+
+      body {
+        height: 100%;
+        font-family: "Noto Sans", sans-serif;
+        background-color: #ffffff;
+      }
+
+      .contact_form {
+        width: 680px;
+        height: 500px;
+        margin: 10px 363px;
+        border-radius: 5px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        background-color: #2fa4ab;
+        padding-left: 30px;
+        margin-top: -160px;
+        margin-left: 460px;
+      }
+
+      .boton_menu {
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        padding: 20px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        outline: none;
+        border-radius: 5px;
+        z-index: 0;
+        background: #fff;
+        overflow: hidden;
+        border: 2px solid #495057;
+        color: #495057;
+        margin-left: 300px;
+        text-align: center;
+        margin-top: -15px;
+      }
+      .boton_menu:hover {
+        color: #fff;
+      }
+      .boton_menu:hover:after {
+        height: 100%;
+      }
+      .boton_menu:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: all 0.3s ease;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background: #2fa4ab;
+      }
+
+      input {
+        background-color: #ffffff;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #2fa4ab;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+      }
+
+      textarea {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #fbfbfb;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        margin-left: 50px;
+      }
+
+      label {
+        display: block;
+        float: center;
+        margin-left: 50px;
+      }
+
+      button {
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+        margin-left: 40px;
+      }
+
+      button p {
+        color: #0abaf0;
+      }
+
+      span {
+        color: #f70707;
+      }
+
+      .aviso {
+        font-size: 13px;
+        color: #0e0e0e;
+      }
+
+      h5 {
+        font-size: 39px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+      }
+
+      h6 {
+        position: relative;
+        font-size: 14px;
+        color: #fbfbfb;
+        text-align: left;
+        width: 500px;
+        margin-left: 90px;
+        margin-top: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #0e0e0e;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #a8a8a8;
+      }
+
+      ::-webkit-textarea-placeholder {
+        color: #a8a8a8;
+      }
+
+      .formulario input:focus {
+        outline: 0;
+        border: 1px solid #97d848;
+      }
+
+      .formulario textarea:focus {
+        outline: 0;
+        border: 1px solid #97d848;
+      }
+      #columna1 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        margin-top: 10px;
+      }
+      #columna2 {
+        position: relative;
+        margin-left: 320px;
+        margin-right: 20px;
+        top: -1205px;
+        width: 300px;
+      }
+      #paragrafo {
+        font-size: 10px;
+        color: #ffffff;
+        text-align: justify;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .linea {
+        border-top: 2px solid white;
+        height: 2px;
+        max-width: 270px;
+        padding: 0;
+        margin: 5px 0 -10px auto;
+      }
+      .linea2 {
+        border-top: 1px solid white;
+        height: 1px;
+        max-width: 280px;
+        padding: 0;
+        margin: 5px auto 10px auto;
+      }
+      ul.a {
+        list-style-type: circle;
+      }
+       
+      
+      /* creamos dos columnas para que se divida la pantalla como hemos diseñado en el figma */
+      caja_izq {
+        border-radius: 5px;
+        float: left;
+        width: 95%;
+        height: 200px;
+        /*background-image: url("img/pc.jpg");*/
+        background-image: url("img/pc.jpg");
+        background-color: #cccccc;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        transition: background 1s ease-in;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      
+
+      
+
+     
     </style>
     
   </head>
   <body>
     <header>
-      <a href="index.html"><h2>ISABEL NAVARRO FUENTES</h2></a>
-      <h4>Web developer Frontend</h4>
-      <a href="about_me.html"><h3>About me</h3></a>
-      <a href="https://goo.gl/maps/cpzduRjZUyJF51wL6" target="_blank" alt="Ubicacion"><ubicacion></ubicacion></a>
-      <a href="http://www.linkedin.com/in/isabel-navarro-fuentes" target="_blank"><linkedin></linkedin></a>
-      <a href="mailto:isabel.navarro.fuentes@gmail.com"><email></email></a>
-      <a href="https://web.whatsapp.com/"><whatssap></whatssap></a>
-      
-      <foto_isa></foto_isa>
+        <a href="index.html"><h2>ISABEL NAVARRO FUENTES</h2></a>
+        <h4>Web developer Frontend</h4>
+  
+        <a
+          href="https://goo.gl/maps/cpzduRjZUyJF51wL6"
+          target="_blank"
+          alt="Ubicacion"
+          ><ubicacion></ubicacion
+        ></a>
+        <a
+          href="http://www.linkedin.com/in/isabel-navarro-fuentes"
+          target="_blank"
+          ><linkedin></linkedin
+        ></a>
+        <a href="mailto:isabel.navarro.fuentes@gmail.com"><email></email></a>
+        <a href="https://web.whatsapp.com/"><whatssap></whatssap></a>
+  
+        <foto_isa></foto_isa>
     </header>
+    <a href="index.html"></a><button class="boton_menu">Home</button></a>
+    <a href="about_me.html"><button class="boton_menu">Sobre mi</button></a>
+    <a href="contact.html"><button class="boton_menu">Contacto</button></a>
+    <div class="contact_form">        
+        <caja_izq> </caja_izq>
+        <comun></comun><h6> Gran capacidad de comunicación, trabajo en equipo e interrelación con los demás departamentos.</h6>
+        <idea></idea><h6>Detallista, meticulosa, ágil y proactiva.</h6>
+        <analisis></analisis><h6>Detecto necesidades de los clientes y defino las mejores soluciones para cubrir sus necesidades.</h6>
+    </div>
+  </body>
+      
 
-    <section>
-      <caja_izq> </caja_izq>
+  
 
-      <caja_der>
-        <caja_der_sup>
-          <h1 id="myDIV">Developer Web FrontEnd</h1>
-        </caja_der_sup>
-        <caja_der_inf></caja_der_inf>
-      </caja_der>
-    </section>
-
-    <footer>
-      <footer-p>isabel.navarro.fuentes@gmail.com</footer-p>
-      <a href="contact.html"><p2>Contact</p2></a>
-    </footer>
-    </p>
+    
+    
   </body>
 </html>
